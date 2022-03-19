@@ -21,7 +21,6 @@ if not user_from:
     exit()
 
 number=int(input("Please write how many e-mails will be sent:"))
-b=0
 a=0
 try:
     while a<number:
@@ -32,8 +31,7 @@ try:
         mail.login(user_from,user_password)
         mail.sendmail(user_from,user_target,content)
         a=a+1
-        b=b+1
-        print("Send mail succesfully:",b)
+        print("Send mail succesfully:",a)
 
 
 except KeyboardInterrupt:
